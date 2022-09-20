@@ -95,7 +95,7 @@ p{
     /* height: inherit; */
     left:0;
     /* background: #6d42c7; */
-    background-image: url("mountains.jpg");
+    background-image: url("/unit-02-html-css-assessment-suzi01/mountains.jpg");
     background-size: cover;
     color: white;
     text-align: center;
@@ -126,7 +126,7 @@ img {
     /* height: 8%; */
     /* right:0; */
     /* height: auto; */
-    background-image: url('coding-girl.jpg');
+    background-image: url('/unit-02-html-css-assessment-suzi01/coding-girl.jpg');
     background-size: cover;
     height:100vh;
 }
@@ -355,7 +355,7 @@ a:-webkit-any-link {
         /* display: flex; */
         /* padding: 20%; */
         position: relative;
-        background-image: url('desk.jpg');
+        background-image: url('/unit-02-html-css-assessment-suzi01/desk.jpg');
         /* background-repeat: no-repeat; */
         background-size:cover;
         pointer-events: none;
