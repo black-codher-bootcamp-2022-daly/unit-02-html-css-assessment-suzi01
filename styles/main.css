@@ -1,0 +1,415 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&family=Roboto:wght@400;500:900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;600;900&family=Roboto:wght@400;500;900&display=swap');
+
+@keyframes from-left{
+    0% {margin:0 0 0 -50%;}
+    100% {margin:0 0 0 10%;}
+}
+
+@keyframes size-up{
+    from {font-size: small;}
+    to {font-size: large;}
+}
+
+
+@keyframes race-in{
+    0% {transform: rotate(0.0deg)}
+    50% {transform: rotate(14.0deg)}
+    100% {transform: rotate(0.0deg)}
+}
+
+@keyframes wave-hand{
+    0% {transform: rotate(0.0deg)}
+    10% {transform: rotate(14.0deg)}
+    20% {transform: rotate(-8.0deg)}
+    30% {transform: rotate(14.0deg)}
+    40% {transform: rotate(-4.0deg)}
+    50% {transform: rotate(10.0deg)}
+    60% {transform: rotate(0.0deg)}
+    100% {transform: rotate(0.0deg)}
+}
+
+section {
+    height:auto;
+    background-color: red;
+    border: solid 1px black;
+}
+
+
+body {
+    margin:0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    position: relative;
+    padding-bottom: 165px;
+}
+
+.name{
+    margin-left: 20px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color:#8aacff;
+}
+
+.first-line {
+    padding-top:20px ;
+    margin:0 0 0 10%;
+    animation-name: from-left, race-in;
+    animation-duration: 2s;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom:6px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    width:fit-content;
+}
+
+.wave {
+    display: inline-block;
+    animation-name: wave-hand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding-right: 8px;
+}
+
+.second-line {
+    /* padding: 10px 0 30px 0; */
+    margin-top: 0;
+    font-size: 500%;
+    animation-name: wave-hand;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    font-family: 'Permanent Marker', cursive;
+}
+
+p{
+    padding: 40px;
+    font-size: 1.5rem;
+}
+
+
+.about-me {
+    /* position: absolute; */
+    width: 100%;
+    /* height: inherit; */
+    left:0;
+    /* background: #6d42c7; */
+    background-image: url("mountains.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5%;;
+   
+}
+
+img {
+    border-radius: 38% 62% 70% 30% / 30% 30% 70% 70% ;
+    width: 60%;
+    transform: rotate(-20deg);
+}
+
+.background-img {
+    border-radius: 38% 62% 70% 30% / 30% 30% 70% 70% ;
+    background-color: aqua;
+    width: 60%;
+    margin: auto;
+    transform: rotate(20deg);
+}
+
+
+.sec-skew {
+    /* position: absolute; */
+    /* width: 40%; */
+    /* width: 100%; */
+    /* height: 8%; */
+    /* right:0; */
+    /* height: auto; */
+    background-image: url('coding-girl.jpg');
+    background-size: cover;
+    height:100vh;
+}
+
+
+
+.sec-skew::before {
+    /* content: ''; */
+    /* position: absolute; */
+    /* width: 100%;  */
+    /* height: 60%;  */
+    /* background-color: rgba(87, 84, 236, 0.7);  */
+    /* color: white;  */
+   
+  }
+
+.sec-skew:hover {
+    /* width: 100%; */
+    /* font-size: 1.3rem; */
+    /* height: 110%; */
+    /* height: 100vh; */
+    /* background-color: #6d42c7;
+    animation-name: size-up;
+    animation-duration: infinite; */
+    /* background-color: rgba(87, 84, 236, 0.7); */
+}
+
+.sec-skew,
+.sec-skew::before {
+    /* transition: all 2s ease-in-out; */
+}
+
+.sec-container{
+    /* background: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+    background: rgba(255, 255, 255, 0.21);
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    align-items: center;
+    padding-left:10px;
+
+
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+h2 {
+    font-size: 100px;
+    text-indent:10px;
+    color:#8aacff;
+    position:relative;
+    left:40px;
+}
+
+li {
+    padding:2px;
+    font-size: 18px;
+    color:#e85b48;
+    font-weight: 900;
+}
+
+.timeline-section{
+    background-color:#24292d;
+    /* min-height:100vh; */
+    padding: 100px 15px ;
+    /* position: absolute; */
+    /* margin-top: calc(100vh); */
+    width: auto;
+
+  }
+ 
+  .timeline-items {
+    max-width:1000px;
+  /*   background-color:red; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+  }
+ 
+  .timeline-items::before {
+    content:'';
+    position:absolute;
+    width:2px;
+    height:100%;
+    background-color: #2f363e;
+    left:calc(50% - 1px);
+  }
+ 
+  .timeline-item {
+  /*   background-color: #2f363e; */
+    /* margin-bottom:40px; */
+    width: 100%;
+    position: relative;
+  }
+ 
+  .timeline-items:last-child {
+    margin-bottom:0;
+  }
+ 
+  .timeline-item:nth-child(odd){
+    padding-right:calc(50% + 30px);
+    text-align:right;
+ 
+  }
+ 
+  .timeline-item:nth-child(even){
+     padding-left:calc(50% + 30px);
+  }
+ 
+  .timeline-dot{
+    height:16px;
+    width:16px;
+    background-color: #eaa023;
+    position:absolute;
+    left: calc(50% - 8px);
+    border-radius:50%;
+    top:10px;
+  }
+ 
+  .timeline-date {
+    font-size: 18px;
+    color: #eaa023;
+    margin: 6px 0 15px;
+  }
+ 
+  .timeline-content{
+    background-color: #2f363e;
+    padding: 20px;
+    border-radius:5px;
+  }
+ 
+  .timeline-content h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+ 
+  .timeline-content p {
+    color: #c8c8c8;
+    font-size: 16px;
+    font-weight: 300;
+    line-height:22px;
+  }
+
+
+
+footer {
+    width: 100%;
+    height: 165px;
+    padding: 20px 0 10px 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    /* bottom: 0 !important; */
+    /* bottom: -230%; */
+    /* bottom:0;
+    left: 0;
+    right: 0; */
+}
+
+.social-media {
+    padding: 20px;
+}
+
+.social-media li {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer i {
+    padding:15px;
+    color: #32cd32;
+}
+
+footer i:hover{
+    color: #E5F21B ;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color:#e85b48;
+}
+
+@media(max-width:800px){
+   
+    .timeline-section{
+        /* position: absolute; */
+        /* margin-top: 0; */
+        /* width: auto; */
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    .timeline-items::before{
+        left:9px;
+    }
+   
+    .timeline-item:nth-child(odd){
+      padding-right:0;
+      text-align: left;
+    }
+   
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+      padding-left:39px;
+    }
+
+   
+    .timeline-dot{
+      left:2px;
+    }
+
+    body{
+        /* height: 100vh; */
+    }
+
+    .sec-skew {
+        width: 100%;
+        /* display: flex; */
+        /* padding: 20%; */
+        position: relative;
+        background-image: url('desk.jpg');
+        /* background-repeat: no-repeat; */
+        background-size:cover;
+        pointer-events: none;
+        /* justify-content: center; */
+        padding: 50px 0;
+    }
+
+    .second-line {
+        padding: 10px 0 15px 0;
+    }
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        left:0;
+    }
+
+    .about-me {
+        /* width: 100vh; */
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        /* height: auto; */
+    }
+
+    .sec-container{
+        width: 80%;
+        align-content: left;
+        padding-top: 20px;
+        margin: auto;
+        top:10px;
+
+    }
+
+    footer{
+        /* position:relative; */
+        /* height: 165px; */
+        /* bottom: 0; */
+        /* flex-direction: column; */
+        /* min-height: 100%; */
+        width: 100%;
+        /* margin-top: 256%; */
+        /* width: 100%; */
+        /* top:271%; */
+        text-align: center;
+    }
+
+    /* footer li{
+        display: inline;
+        align-items: center;
+    }
+
+    footer ul {
+        text-align: center;
+    } */
+  }
