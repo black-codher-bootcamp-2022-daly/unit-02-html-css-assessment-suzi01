@@ -79,7 +79,7 @@ body {
 .second-line {
     /* padding: 10px 0 30px 0; */
     margin-top: 0;
-    font-size: 15em;
+    font-size: 6em;
     animation-name: wave-hand;
     animation-duration: 2s;
     animation-iteration-count: 2;
