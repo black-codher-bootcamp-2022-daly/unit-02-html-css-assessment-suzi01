@@ -1,0 +1,27 @@
+@keyframes from-left{
+    0% {margin:0 0 0 -100%;}
+    100% {margin:0 0 0 10%;}
+}
+
+@keyframes size-up{
+    from {font-size: small;}
+    to {font-size: large;}
+}
+
+
+@keyframes race-in{
+    0% {transform: rotate(0.0deg)}
+    50% {transform: rotate(14.0deg)}
+    100% {transform: rotate(0.0deg)}
+}
+
+@keyframes wave-hand{
+    0% {transform: rotate(0.0deg)}
+    10% {transform: rotate(14.0deg)}
+    20% {transform: rotate(-8.0deg)}
+    30% {transform: rotate(14.0deg)}
+    40% {transform: rotate(-4.0deg)}
+    50% {transform: rotate(10.0deg)}
+    60% {transform: rotate(0.0deg)}
+    100% {transform: rotate(0.0deg)}
+} 
